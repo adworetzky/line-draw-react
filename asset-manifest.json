@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/line-draw-react/static/css/main.25200f5b.css",
-    "main.js": "/line-draw-react/static/js/main.9647a943.js",
+    "main.css": "/line-draw-react/static/css/main.92b0600c.css",
+    "main.js": "/line-draw-react/static/js/main.f2215d76.js",
     "index.html": "/line-draw-react/index.html",
-    "main.25200f5b.css.map": "/line-draw-react/static/css/main.25200f5b.css.map",
-    "main.9647a943.js.map": "/line-draw-react/static/js/main.9647a943.js.map"
+    "main.92b0600c.css.map": "/line-draw-react/static/css/main.92b0600c.css.map",
+    "main.f2215d76.js.map": "/line-draw-react/static/js/main.f2215d76.js.map"
   },
   "entrypoints": [
-    "static/css/main.25200f5b.css",
-    "static/js/main.9647a943.js"
+    "static/css/main.92b0600c.css",
+    "static/js/main.f2215d76.js"
   ]
 }
