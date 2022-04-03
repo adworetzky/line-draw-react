@@ -1,0 +1,8 @@
+.ui-bar{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    max-width: 300px;
+    margin: auto;
+}
+
