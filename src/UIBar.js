@@ -24,7 +24,7 @@ export default function UIBar(props) {
         </Button>
         <Input
           id="search-term-input"
-          placeholder="Search Term"
+          placeholder="Unsplash search term"
           onChange={() =>
             console.log(document.querySelector('#search-term-input').value)
           }
