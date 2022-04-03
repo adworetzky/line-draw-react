@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+import './Canvas.css';
 
 export default function Canvas(props) {
   const { draw, ...rest } = props;
@@ -11,6 +12,9 @@ export default function Canvas(props) {
     draw(ctx);
   }, [draw]);
 
-  return <canvas ref={canvasRef} {...rest}></canvas>;
+  return (
+    <div className="canvas-container">
+      <canvas ref={canvasRef} {...rest}></canvas>;
+    </div>
+  );
 }
-

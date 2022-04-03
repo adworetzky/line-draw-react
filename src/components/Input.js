@@ -1,8 +1,14 @@
-export default function Input(props) {
-  const { id, placeholder, ...rest } = props;
+import * as React from 'react';
+import { Input } from 'baseui/input';
+
+export default () => {
+  const [value, setValue] = React.useState('Unsplash search term');
   return (
-    <>
-      <input type="text" id={id} placeholder={placeholder} {...rest}></input>
-    </>
+    <Input
+      value={value}
+      onChange={(e) => setValue(e.target.value)}
+      placeholder="Controlled Input"
+      clearOnEscape
+    />
   );
-}
+};

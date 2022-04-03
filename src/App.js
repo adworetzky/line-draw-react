@@ -1,13 +1,14 @@
 import './App.css';
-import UIBar from './UIBar';
+import { DarkTheme, ThemeProvider } from 'baseui';
+import UIBar from './components/UIBar';
 import Canvas from './components/Canvas';
 
 function App() {
   const draw = (ctx) => {
-    ctx.fillStyle = '#000';
+    ctx.fillStyle = '#000099';
     ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
     let margin = 50;
-    ctx.fillStyle = '#f1f1f1';
+    ctx.fillStyle = '#990000';
     ctx.fillRect(
       margin,
       margin,
@@ -17,10 +18,12 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <UIBar></UIBar>
-      <Canvas draw={draw} id="canvas0" width={500} height={500}></Canvas>
-    </div>
+    <ThemeProvider theme={DarkTheme}>
+      <div className="App" style={{ backgroundColor: '#121212' }}>
+        <UIBar></UIBar>
+        <Canvas draw={draw} id="canvas0" width={500} height={500}></Canvas>
+      </div>
+    </ThemeProvider>
   );
 }
 
